@@ -1,0 +1,39 @@
+{
+  "name": "browser-buffer",
+  "version": "0.0.1",
+  "description": "Buffer in your browser!",
+  "files": [ "dist/buffer.js" ],
+  "main": "dist/buffer.js",
+  "scripts": {
+    "prepublish": "browserify -p tsify -t uglifyify src/buffer.ts -s Buffer -o dist/buffer.js",
+    "start": "karma start",
+    "test": "karma start --single-run"
+  },
+  "homepage": "https://github.com/wjordan/browser-buffer",
+  "author": "John Vilk <jvilk@cs.umass.edu> (http://people.cs.umass.edu/~jvilk)",
+  "contributors": [
+    "Will Jordan <will.jordan@gmail.com>"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wjordan/browser-buffer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wjordan/browser-buffer/issues"
+  },
+  "devDependencies": {
+    "browserify": "^10.2.4",
+    "karma": "^0.12.36",
+    "karma-browserify": "^4.2.1",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-mocha": "^0.1.10",
+    "karma-phantomjs-launcher": "^0.2.0",
+    "mocha": "^2.2.5",
+    "phantomjs": "^1.9.17",
+    "tsify": "^0.11.2",
+    "typescript": "^1.4.1",
+    "uglifyify": "^3.0.1",
+    "watchify": "^3.2.2"
+  }
+}
