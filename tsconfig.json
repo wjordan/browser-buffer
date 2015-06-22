@@ -1,18 +1,19 @@
 {
-    "compilerOptions": {
-        "module": "commonjs",
-        "noImplicitAny": false,
-        "removeComments": true,
-        "preserveConstEnums": true,
-        "sourceMap": true,
-        "target": "ES3",
-        "declaration": true
-    },
-    "files": [
-        "buffer.ts",
-        "buffer_core.ts",
-        "buffer_core_array.ts",
-        "buffer_core_arraybuffer.ts",
-        "buffer_core_imagedata.ts"
-    ]
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": false,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "target": "ES3",
+    "declaration": true,
+    "outDir": "dist"
+  },
+  "files": [
+    "src/buffer.ts",
+    "src/buffer_core.ts",
+    "src/buffer_core_array.ts",
+    "src/buffer_core_arraybuffer.ts",
+    "src/buffer_core_imagedata.ts"
+  ]
 }
